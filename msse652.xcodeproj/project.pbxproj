@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8348073F1969403000FCC405 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8348073E1969403000FCC405 /* ContactsViewController.m */; };
+		83480742196940C600FCC405 /* CoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83480741196940C600FCC405 /* CoursesTableViewController.m */; };
+		834807451969411300FCC405 /* ProgramsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834807441969411300FCC405 /* ProgramsTableViewController.m */; };
+		838BA6501969417D0086C837 /* TasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838BA64F1969417D0086C837 /* TasksViewController.m */; };
 		83B04E411968BFBC00E0CA42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B04E401968BFBC00E0CA42 /* Foundation.framework */; };
 		83B04E431968BFBC00E0CA42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B04E421968BFBC00E0CA42 /* CoreGraphics.framework */; };
 		83B04E451968BFBC00E0CA42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B04E441968BFBC00E0CA42 /* UIKit.framework */; };
@@ -36,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8348073D1969403000FCC405 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		8348073E1969403000FCC405 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		83480740196940C600FCC405 /* CoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesTableViewController.h; sourceTree = "<group>"; };
+		83480741196940C600FCC405 /* CoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesTableViewController.m; sourceTree = "<group>"; };
+		834807431969411300FCC405 /* ProgramsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramsTableViewController.h; sourceTree = "<group>"; };
+		834807441969411300FCC405 /* ProgramsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramsTableViewController.m; sourceTree = "<group>"; };
+		838BA64E1969417C0086C837 /* TasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TasksViewController.h; sourceTree = "<group>"; };
+		838BA64F1969417D0086C837 /* TasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksViewController.m; sourceTree = "<group>"; };
 		83B04E3D1968BFBC00E0CA42 /* msse652.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = msse652.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B04E401968BFBC00E0CA42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		83B04E421968BFBC00E0CA42 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +133,14 @@
 				83B04E4F1968BFBC00E0CA42 /* AppDelegate.h */,
 				83B04E501968BFBC00E0CA42 /* AppDelegate.m */,
 				83B04E521968BFBC00E0CA42 /* Main.storyboard */,
+				838BA64E1969417C0086C837 /* TasksViewController.h */,
+				838BA64F1969417D0086C837 /* TasksViewController.m */,
+				834807431969411300FCC405 /* ProgramsTableViewController.h */,
+				834807441969411300FCC405 /* ProgramsTableViewController.m */,
+				83480740196940C600FCC405 /* CoursesTableViewController.h */,
+				83480741196940C600FCC405 /* CoursesTableViewController.m */,
+				8348073D1969403000FCC405 /* ContactsViewController.h */,
+				8348073E1969403000FCC405 /* ContactsViewController.m */,
 				83B04E781968C30000E0CA42 /* SecondViewController.h */,
 				83B04E791968C30000E0CA42 /* SecondViewController.m */,
 				83B04E751968C2E600E0CA42 /* FirstViewController.h */,
@@ -260,10 +280,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				83B04E7A1968C30000E0CA42 /* SecondViewController.m in Sources */,
+				83480742196940C600FCC405 /* CoursesTableViewController.m in Sources */,
+				834807451969411300FCC405 /* ProgramsTableViewController.m in Sources */,
+				8348073F1969403000FCC405 /* ContactsViewController.m in Sources */,
 				83B04E571968BFBC00E0CA42 /* ViewController.m in Sources */,
 				83B04E511968BFBC00E0CA42 /* AppDelegate.m in Sources */,
 				83B04E4D1968BFBC00E0CA42 /* main.m in Sources */,
 				83B04E771968C2E600E0CA42 /* FirstViewController.m in Sources */,
+				838BA6501969417D0086C837 /* TasksViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +492,7 @@
 				83B04E711968BFBC00E0CA42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83B04E721968BFBC00E0CA42 /* Build configuration list for PBXNativeTarget "msse652Tests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +501,7 @@
 				83B04E741968BFBC00E0CA42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

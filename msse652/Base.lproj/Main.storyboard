@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="-279" y="-42"/>
         </scene>
-        <!--Table View Controller - SCIS Programs-->
+        <!--Programs Table View Controller - SCIS Programs-->
         <scene sceneID="6oe-K9-e7q">
             <objects>
-                <tableViewController id="9Wj-rb-zJG" sceneMemberID="viewController">
+                <tableViewController id="9Wj-rb-zJG" customClass="ProgramsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="FGg-PY-V0G">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="248" y="-846"/>
         </scene>
-        <!--Table View Controller - SCIS Courses-->
+        <!--Courses Table View Controller - SCIS Courses-->
         <scene sceneID="3pe-Hu-kuB">
             <objects>
-                <tableViewController id="N4n-dm-8rl" sceneMemberID="viewController">
+                <tableViewController id="N4n-dm-8rl" customClass="CoursesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8Ib-DS-3AZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="172" y="-42"/>
         </scene>
-        <!--View Controller - Contacts-->
+        <!--Contacts View Controller - Contacts-->
         <scene sceneID="uC1-Pk-Ytb">
             <objects>
-                <viewController id="kfH-g2-7QM" sceneMemberID="viewController">
+                <viewController id="kfH-g2-7QM" customClass="ContactsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Umf-Ga-hRj"/>
                         <viewControllerLayoutGuide type="bottom" id="fyl-LH-QOq"/>
@@ -216,10 +216,10 @@
             </objects>
             <point key="canvasLocation" x="-825" y="790"/>
         </scene>
-        <!--View Controller - Tasks-->
+        <!--Tasks View Controller - Tasks-->
         <scene sceneID="x0D-iL-BaS">
             <objects>
-                <viewController id="VQW-M3-cxa" sceneMemberID="viewController">
+                <viewController id="VQW-M3-cxa" customClass="TasksViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gd6-TA-LVi"/>
                         <viewControllerLayoutGuide type="bottom" id="o8d-dl-AgA"/>

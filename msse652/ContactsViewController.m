@@ -1,23 +1,18 @@
 //
-//  FirstViewController.m
+//  ContactsViewController.m
 //  msse652
 //
-//  Created by Christopher Howell on 7/5/14.
+//  Created by Christopher Howell on 7/6/14.
 //  Copyright (c) 2014 msse652. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "ContactsViewController.h"
 
-@interface FirstViewController ()
+@interface ContactsViewController ()
 
 @end
 
-@implementation FirstViewController
-
-// unwind the segue
-- (IBAction)exitHere:(UIStoryboardSegue *)sender {
-    
-}
+@implementation ContactsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
