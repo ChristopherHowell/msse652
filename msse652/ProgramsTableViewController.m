@@ -7,8 +7,11 @@
 //
 
 #import "ProgramsTableViewController.h"
+#import "NSURLConnectionSvc.h"
 
 @interface ProgramsTableViewController ()
+
+@property (strong, nonatomic) NSURLConnectionSvc *svc;
 
 @end
 
@@ -32,6 +35,10 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    // start connection service and retrieve list of Programs
+    self.svc = [NSURLConnectionSvc new];
+    [self.svc downloadPrograms:self.tableView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,28 +51,32 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    // Return the number of rows in the section based on number of Programs.
+    return [[self.svc retrieveAllPrograms] count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
     // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleTableIdentifier" forIndexPath:indexPath];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"simpleTableIdentifier"];
+    }
+
+    Program *program = [[self.svc retrieveAllPrograms] objectAtIndex:indexPath.row];
+    cell.textLabel.text = program.programName;
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
