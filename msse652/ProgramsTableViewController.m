@@ -7,11 +7,11 @@
 //
 
 #import "ProgramsTableViewController.h"
-#import "NSURLConnectionSvc.h"
+#import "AFNetworkingSvc.h"
 
 @interface ProgramsTableViewController ()
 
-@property (strong, nonatomic) NSURLConnectionSvc *svc;
+@property (strong, nonatomic) AFNetworkingSvc *svc;
 
 @end
 
@@ -30,14 +30,8 @@
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
     // start connection service and retrieve list of Programs
-    self.svc = [NSURLConnectionSvc new];
+    self.svc = [AFNetworkingSvc new];
     [self.svc downloadPrograms:self.tableView];
 }
 
