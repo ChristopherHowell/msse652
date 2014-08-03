@@ -25,7 +25,6 @@ Week 3
 - Created new AFNetworking Service
 - Utilize AFNetworking to download program list from server
 - Display list of programs in Programs table view
-=======
 
 Week 4
 =======
