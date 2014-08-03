@@ -10,6 +10,10 @@
 		8348073F1969403000FCC405 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8348073E1969403000FCC405 /* ContactsViewController.m */; };
 		83480742196940C600FCC405 /* CoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83480741196940C600FCC405 /* CoursesTableViewController.m */; };
 		834807451969411300FCC405 /* ProgramsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834807441969411300FCC405 /* ProgramsTableViewController.m */; };
+		83677A1619732C1200D48BC8 /* Program.m in Sources */ = {isa = PBXBuildFile; fileRef = 83677A1519732C1200D48BC8 /* Program.m */; };
+		83677A1919732C2A00D48BC8 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 83677A1819732C2A00D48BC8 /* Course.m */; };
+		83677A1D1973D52100D48BC8 /* NSURLConnectionSvc.m in Sources */ = {isa = PBXBuildFile; fileRef = 83677A1C1973D52100D48BC8 /* NSURLConnectionSvc.m */; };
+		838515461984B91D004AB7DA /* AFNetworkingSvc.m in Sources */ = {isa = PBXBuildFile; fileRef = 838515451984B91D004AB7DA /* AFNetworkingSvc.m */; };
 		838BA6501969417D0086C837 /* TasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838BA64F1969417D0086C837 /* TasksViewController.m */; };
 		83B04E411968BFBC00E0CA42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B04E401968BFBC00E0CA42 /* Foundation.framework */; };
 		83B04E431968BFBC00E0CA42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B04E421968BFBC00E0CA42 /* CoreGraphics.framework */; };
@@ -27,6 +31,7 @@
 		83B04E6C1968BFBC00E0CA42 /* msse652Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B04E6B1968BFBC00E0CA42 /* msse652Tests.m */; };
 		83B04E771968C2E600E0CA42 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B04E761968C2E600E0CA42 /* FirstViewController.m */; };
 		83B04E7A1968C30000E0CA42 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B04E791968C30000E0CA42 /* SecondViewController.m */; };
+		9E1B6C83585F40F8A10DFE34 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E6ED8997CB4031A355BA76 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +45,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17BD940E3FF2455BAA59EA3E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		52E6ED8997CB4031A355BA76 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8348073D1969403000FCC405 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
 		8348073E1969403000FCC405 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		83480740196940C600FCC405 /* CoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesTableViewController.h; sourceTree = "<group>"; };
 		83480741196940C600FCC405 /* CoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesTableViewController.m; sourceTree = "<group>"; };
 		834807431969411300FCC405 /* ProgramsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramsTableViewController.h; sourceTree = "<group>"; };
 		834807441969411300FCC405 /* ProgramsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramsTableViewController.m; sourceTree = "<group>"; };
+		83677A1419732C1200D48BC8 /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Program.h; sourceTree = "<group>"; };
+		83677A1519732C1200D48BC8 /* Program.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Program.m; sourceTree = "<group>"; };
+		83677A1719732C2A00D48BC8 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		83677A1819732C2A00D48BC8 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		83677A1A1973CD3600D48BC8 /* ProgramSvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgramSvc.h; sourceTree = "<group>"; };
+		83677A1B1973D52100D48BC8 /* NSURLConnectionSvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionSvc.h; sourceTree = "<group>"; };
+		83677A1C1973D52100D48BC8 /* NSURLConnectionSvc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionSvc.m; sourceTree = "<group>"; };
+		838515441984B91D004AB7DA /* AFNetworkingSvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingSvc.h; sourceTree = "<group>"; };
+		838515451984B91D004AB7DA /* AFNetworkingSvc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingSvc.m; sourceTree = "<group>"; };
 		838BA64E1969417C0086C837 /* TasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TasksViewController.h; sourceTree = "<group>"; };
 		838BA64F1969417D0086C837 /* TasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksViewController.m; sourceTree = "<group>"; };
 		83B04E3D1968BFBC00E0CA42 /* msse652.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = msse652.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +97,7 @@
 				83B04E431968BFBC00E0CA42 /* CoreGraphics.framework in Frameworks */,
 				83B04E451968BFBC00E0CA42 /* UIKit.framework in Frameworks */,
 				83B04E411968BFBC00E0CA42 /* Foundation.framework in Frameworks */,
+				9E1B6C83585F40F8A10DFE34 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +114,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83677A1319732A9600D48BC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83677A1419732C1200D48BC8 /* Program.h */,
+				83677A1519732C1200D48BC8 /* Program.m */,
+				83677A1719732C2A00D48BC8 /* Course.h */,
+				83677A1819732C2A00D48BC8 /* Course.m */,
+				83677A1A1973CD3600D48BC8 /* ProgramSvc.h */,
+				83677A1B1973D52100D48BC8 /* NSURLConnectionSvc.h */,
+				83677A1C1973D52100D48BC8 /* NSURLConnectionSvc.m */,
+				838515441984B91D004AB7DA /* AFNetworkingSvc.h */,
+				838515451984B91D004AB7DA /* AFNetworkingSvc.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		83B04E341968BFBC00E0CA42 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +137,7 @@
 				83B04E651968BFBC00E0CA42 /* msse652Tests */,
 				83B04E3F1968BFBC00E0CA42 /* Frameworks */,
 				83B04E3E1968BFBC00E0CA42 /* Products */,
+				17BD940E3FF2455BAA59EA3E /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +157,7 @@
 				83B04E421968BFBC00E0CA42 /* CoreGraphics.framework */,
 				83B04E441968BFBC00E0CA42 /* UIKit.framework */,
 				83B04E5F1968BFBC00E0CA42 /* XCTest.framework */,
+				52E6ED8997CB4031A355BA76 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,6 +165,7 @@
 		83B04E461968BFBC00E0CA42 /* msse652 */ = {
 			isa = PBXGroup;
 			children = (
+				83677A1319732A9600D48BC8 /* Model */,
 				83B04E4F1968BFBC00E0CA42 /* AppDelegate.h */,
 				83B04E501968BFBC00E0CA42 /* AppDelegate.m */,
 				83B04E521968BFBC00E0CA42 /* Main.storyboard */,
@@ -189,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83B04E6F1968BFBC00E0CA42 /* Build configuration list for PBXNativeTarget "msse652" */;
 			buildPhases = (
+				29ED4C9FDCFE47A584F72239 /* Check Pods Manifest.lock */,
 				83B04E391968BFBC00E0CA42 /* Sources */,
 				83B04E3A1968BFBC00E0CA42 /* Frameworks */,
 				83B04E3B1968BFBC00E0CA42 /* Resources */,
+				FD898B78CB5741559B7344C9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,13 +312,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29ED4C9FDCFE47A584F72239 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD898B78CB5741559B7344C9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83B04E391968BFBC00E0CA42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83677A1619732C1200D48BC8 /* Program.m in Sources */,
 				83B04E7A1968C30000E0CA42 /* SecondViewController.m in Sources */,
 				83480742196940C600FCC405 /* CoursesTableViewController.m in Sources */,
+				83677A1919732C2A00D48BC8 /* Course.m in Sources */,
+				838515461984B91D004AB7DA /* AFNetworkingSvc.m in Sources */,
 				834807451969411300FCC405 /* ProgramsTableViewController.m in Sources */,
 				8348073F1969403000FCC405 /* ContactsViewController.m in Sources */,
 				83B04E571968BFBC00E0CA42 /* ViewController.m in Sources */,
@@ -288,6 +362,7 @@
 				83B04E4D1968BFBC00E0CA42 /* main.m in Sources */,
 				83B04E771968C2E600E0CA42 /* FirstViewController.m in Sources */,
 				838BA6501969417D0086C837 /* TasksViewController.m in Sources */,
+				83677A1D1973D52100D48BC8 /* NSURLConnectionSvc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +484,7 @@
 		};
 		83B04E701968BFBC00E0CA42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17BD940E3FF2455BAA59EA3E /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -422,6 +498,7 @@
 		};
 		83B04E711968BFBC00E0CA42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17BD940E3FF2455BAA59EA3E /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
