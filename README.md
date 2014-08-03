@@ -26,4 +26,9 @@ Week 3
 - Utilize AFNetworking to download program list from server
 - Display list of programs in Programs table view
 =======
->>>>>>> Stashed changes
+
+Week 4
+=======
+- Implemented RestKit through Git
+- Implemented core data file structure 
+- Updated ProgramsTableView to display core data
