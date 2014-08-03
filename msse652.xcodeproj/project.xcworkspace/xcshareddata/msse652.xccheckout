@@ -12,6 +12,8 @@
 	<dict>
 		<key>0242F058-D495-4FD8-9422-A51F4D7543E3</key>
 		<string>https://github.com/ChristopherHowell/msse652.git</string>
+		<key>96B2E17B-20E0-4A64-9879-7E3B9D653A14</key>
+		<string>https://github.com/blakewatters/ISO8601DateFormatterValueTransformer.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>msse652.xcodeproj/project.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>0242F058-D495-4FD8-9422-A51F4D7543E3</key>
 		<string>../..</string>
+		<key>96B2E17B-20E0-4A64-9879-7E3B9D653A14</key>
+		<string>../../RestKit/Vendor/ISO8601DateFormatterValueTransformer</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/ChristopherHowell/msse652.git</string>
@@ -28,6 +32,14 @@
 	<string>0242F058-D495-4FD8-9422-A51F4D7543E3</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>96B2E17B-20E0-4A64-9879-7E3B9D653A14</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ISO8601DateFormatterValueTransformer</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

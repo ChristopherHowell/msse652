@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-// adding conformity to NSURLConnectionDelegate
-@interface ProgramsTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, NSURLConnectionDelegate, NSURLConnectionDataDelegate>
+@interface ProgramsTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
