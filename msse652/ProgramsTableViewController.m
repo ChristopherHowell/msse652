@@ -7,32 +7,43 @@
 //
 
 #import "ProgramsTableViewController.h"
-#import "AFNetworkingSvc.h"
+#import <RestKit/RestKit.h>
+#import "Program.h"
 
 @interface ProgramsTableViewController ()
 
-@property (strong, nonatomic) AFNetworkingSvc *svc;
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 
 @end
 
 @implementation ProgramsTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
+
+- (NSFetchedResultsController *)fetchedResultsController {
+    
+    if (!_fetchedResultsController) {
+        
+        //create web service request
+        NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:NSStringFromClass([Program class])];
+        
+        fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]];
+        
+        self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:[RKManagedObjectStore defaultStore].mainQueueManagedObjectContext sectionNameKeyPath:@"name" cacheName:@"Program"];
+        
+        NSError *error;
+        // invoke the web service
+        [self.fetchedResultsController performFetch:&error];
+        NSLog(@"%@", [self.fetchedResultsController fetchedObjects]);
+        NSAssert(!error, @"Error performing fetch request: %@", error);
     }
-    return self;
+    
+    return _fetchedResultsController;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // start connection service and retrieve list of Programs
-    self.svc = [AFNetworkingSvc new];
-    [self.svc downloadPrograms:self.tableView];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,6 +51,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 #pragma mark - Table view data source
 
@@ -52,7 +64,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section based on number of Programs.
-    return [[self.svc retrieveAllPrograms] count];
+    return self.fetchedResultsController.fetchedObjects.count;
 }
 
 
@@ -65,8 +77,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"simpleTableIdentifier"];
     }
 
-    Program *program = [[self.svc retrieveAllPrograms] objectAtIndex:indexPath.row];
-    cell.textLabel.text = program.programName;
+    Program *program = [[self.fetchedResultsController fetchedObjects] objectAtIndex:indexPath.row];
+    cell.textLabel.text = program.name;
     
     return cell;
 }

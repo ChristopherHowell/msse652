@@ -12,6 +12,7 @@ Week 1
 - Created a tab bar controller with "Contacts, Tasks, First, and My Nav" tabs
 - Created "Programs" and "Courses" table view controllers
 - Created an unwind segue from "Second" to "First" view controller
+<<<<<<< Updated upstream
 
 Week 2
 =======
@@ -24,3 +25,5 @@ Week 3
 - Created new AFNetworking Service
 - Utilize AFNetworking to download program list from server
 - Display list of programs in Programs table view
+=======
+>>>>>>> Stashed changes
