@@ -8,6 +8,7 @@
 
 #import "ProgramsTableViewController.h"
 #import <RestKit/RestKit.h>
+#import <Social/Social.h>
 #import "Program.h"
 
 @interface ProgramsTableViewController ()

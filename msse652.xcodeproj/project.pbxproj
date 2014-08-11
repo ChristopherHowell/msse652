@@ -17,6 +17,7 @@
 		8319EF2E19879AE8001FE5E0 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8319EF2D19879AE8001FE5E0 /* libxml2.dylib */; };
 		8319EF34198A499B001FE5E0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8319EF32198A499B001FE5E0 /* Model.xcdatamodeld */; };
 		8319EF40198A4D38001FE5E0 /* Program.m in Sources */ = {isa = PBXBuildFile; fileRef = 8319EF3F198A4D38001FE5E0 /* Program.m */; };
+		83427BAF198E4695001F7280 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83427BAE198E4695001F7280 /* Social.framework */; };
 		8348073F1969403000FCC405 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8348073E1969403000FCC405 /* ContactsViewController.m */; };
 		83480742196940C600FCC405 /* CoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83480741196940C600FCC405 /* CoursesTableViewController.m */; };
 		834807451969411300FCC405 /* ProgramsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834807441969411300FCC405 /* ProgramsTableViewController.m */; };
@@ -96,6 +97,7 @@
 		8319EF33198A499B001FE5E0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		8319EF3E198A4D38001FE5E0 /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Program.h; sourceTree = "<group>"; };
 		8319EF3F198A4D38001FE5E0 /* Program.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Program.m; sourceTree = "<group>"; };
+		83427BAE198E4695001F7280 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		8348073D1969403000FCC405 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
 		8348073E1969403000FCC405 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		83480740196940C600FCC405 /* CoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesTableViewController.h; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83427BAF198E4695001F7280 /* Social.framework in Frameworks */,
 				8319EF2E19879AE8001FE5E0 /* libxml2.dylib in Frameworks */,
 				8319EF2C19879ADA001FE5E0 /* QuartzCore.framework in Frameworks */,
 				8319EF2A19879ACC001FE5E0 /* SystemConfiguration.framework in Frameworks */,
@@ -205,6 +208,7 @@
 		83B04E3F1968BFBC00E0CA42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83427BAE198E4695001F7280 /* Social.framework */,
 				8319EF2D19879AE8001FE5E0 /* libxml2.dylib */,
 				8319EF2B19879ADA001FE5E0 /* QuartzCore.framework */,
 				8319EF2919879ACC001FE5E0 /* SystemConfiguration.framework */,

@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Social/Social.h>
 
 @interface FirstViewController : UIViewController
+
+// post to Facebook
+- (IBAction)shareFacebook:(id)sender;
+
+// post to Twitter
+- (IBAction)shareTwitter:(id)sender;
 
 // unwind the segue
 - (IBAction)exitHere:(UIStoryboardSegue *)sender;

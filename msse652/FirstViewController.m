@@ -51,4 +51,25 @@
 }
 */
 
+// post to Facebook
+- (IBAction)shareFacebook:(id)sender {
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        SLComposeViewController *view = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        
+        [self presentViewController:view animated:YES completion:nil];
+    } else {
+        NSLog(@"Facebook Share Failed");
+    }
+}
+
+// post to Twitter
+- (IBAction)shareTwitter:(id)sender {
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
+        SLComposeViewController *view = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        
+        [self presentViewController:view animated:YES completion:nil];
+    } else {
+        NSLog(@"Twitter Share Failed");
+    }
+}
 @end
