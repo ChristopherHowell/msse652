@@ -29,11 +29,11 @@ Week 3
 Week 4 
 ========
 - Added use of RestKit 
-- 
+
 Week 5 
 =========
 - Added ability to post to Facebook and Twitter from Social Tab
-- 
+
 Week 6
 =========
 - Added AddTasksViewController to handle update and saving of tasks
