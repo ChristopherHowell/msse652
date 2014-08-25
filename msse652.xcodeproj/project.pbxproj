@@ -38,6 +38,7 @@
 		83B04E6C1968BFBC00E0CA42 /* msse652Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B04E6B1968BFBC00E0CA42 /* msse652Tests.m */; };
 		83B04E771968C2E600E0CA42 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B04E761968C2E600E0CA42 /* FirstViewController.m */; };
 		83B04E7A1968C30000E0CA42 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B04E791968C30000E0CA42 /* SecondViewController.m */; };
+		83DC7F2619AA7A8500836543 /* AddTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DC7F2519AA7A8500836543 /* AddTasksViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,8 @@
 		83B04E761968C2E600E0CA42 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		83B04E781968C30000E0CA42 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		83B04E791968C30000E0CA42 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		83DC7F2419AA7A8500836543 /* AddTasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTasksViewController.h; sourceTree = "<group>"; };
+		83DC7F2519AA7A8500836543 /* AddTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTasksViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +234,8 @@
 				83B04E4F1968BFBC00E0CA42 /* AppDelegate.h */,
 				83B04E501968BFBC00E0CA42 /* AppDelegate.m */,
 				83B04E521968BFBC00E0CA42 /* Main.storyboard */,
+				83DC7F2419AA7A8500836543 /* AddTasksViewController.h */,
+				83DC7F2519AA7A8500836543 /* AddTasksViewController.m */,
 				838BA64E1969417C0086C837 /* TasksViewController.h */,
 				838BA64F1969417D0086C837 /* TasksViewController.m */,
 				834807431969411300FCC405 /* ProgramsTableViewController.h */,
@@ -420,6 +425,7 @@
 				834807451969411300FCC405 /* ProgramsTableViewController.m in Sources */,
 				8348073F1969403000FCC405 /* ContactsViewController.m in Sources */,
 				83B04E571968BFBC00E0CA42 /* ViewController.m in Sources */,
+				83DC7F2619AA7A8500836543 /* AddTasksViewController.m in Sources */,
 				83B04E511968BFBC00E0CA42 /* AppDelegate.m in Sources */,
 				83B04E4D1968BFBC00E0CA42 /* main.m in Sources */,
 				83B04E771968C2E600E0CA42 /* FirstViewController.m in Sources */,
