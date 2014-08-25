@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+- (IBAction)send:(UIButton *)sender;
 
 @end

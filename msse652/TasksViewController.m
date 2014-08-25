@@ -8,7 +8,7 @@
 
 #import "TasksViewController.h"
 
-@interface TasksViewController ()
+@interface TasksViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) NSMutableArray *notesArray;
 @property (weak, nonatomic) IBOutlet UITextField *noteTextField;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

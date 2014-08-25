@@ -22,6 +22,7 @@
 		83480742196940C600FCC405 /* CoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83480741196940C600FCC405 /* CoursesTableViewController.m */; };
 		834807451969411300FCC405 /* ProgramsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834807441969411300FCC405 /* ProgramsTableViewController.m */; };
 		838BA6501969417D0086C837 /* TasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838BA64F1969417D0086C837 /* TasksViewController.m */; };
+		838F079019AAE6C400BB75DE /* SocketSvc.m in Sources */ = {isa = PBXBuildFile; fileRef = 838F078F19AAE6C400BB75DE /* SocketSvc.m */; };
 		83B04E411968BFBC00E0CA42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B04E401968BFBC00E0CA42 /* Foundation.framework */; };
 		83B04E431968BFBC00E0CA42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B04E421968BFBC00E0CA42 /* CoreGraphics.framework */; };
 		83B04E451968BFBC00E0CA42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B04E441968BFBC00E0CA42 /* UIKit.framework */; };
@@ -107,6 +108,8 @@
 		834807441969411300FCC405 /* ProgramsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramsTableViewController.m; sourceTree = "<group>"; };
 		838BA64E1969417C0086C837 /* TasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TasksViewController.h; sourceTree = "<group>"; };
 		838BA64F1969417D0086C837 /* TasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksViewController.m; sourceTree = "<group>"; };
+		838F078E19AAE6C400BB75DE /* SocketSvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketSvc.h; sourceTree = "<group>"; };
+		838F078F19AAE6C400BB75DE /* SocketSvc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketSvc.m; sourceTree = "<group>"; };
 		83B04E3D1968BFBC00E0CA42 /* msse652.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = msse652.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B04E401968BFBC00E0CA42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		83B04E421968BFBC00E0CA42 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -184,6 +187,8 @@
 				8319EF32198A499B001FE5E0 /* Model.xcdatamodeld */,
 				8319EF3E198A4D38001FE5E0 /* Program.h */,
 				8319EF3F198A4D38001FE5E0 /* Program.m */,
+				838F078E19AAE6C400BB75DE /* SocketSvc.h */,
+				838F078F19AAE6C400BB75DE /* SocketSvc.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 				83B04E571968BFBC00E0CA42 /* ViewController.m in Sources */,
 				83DC7F2619AA7A8500836543 /* AddTasksViewController.m in Sources */,
 				83B04E511968BFBC00E0CA42 /* AppDelegate.m in Sources */,
+				838F079019AAE6C400BB75DE /* SocketSvc.m in Sources */,
 				83B04E4D1968BFBC00E0CA42 /* main.m in Sources */,
 				83B04E771968C2E600E0CA42 /* FirstViewController.m in Sources */,
 				8319EF40198A4D38001FE5E0 /* Program.m in Sources */,

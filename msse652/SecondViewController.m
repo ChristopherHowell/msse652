@@ -7,43 +7,74 @@
 //
 
 #import "SecondViewController.h"
+#import "SocketSvc.h"
 
-@interface SecondViewController ()
-
+@interface SecondViewController () <UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (strong, nonatomic) SocketSvc *service;
+@property (strong, nonatomic) NSMutableArray *messages;
 @end
 
 @implementation SecondViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _service = [SocketSvc new];
+    _messages = [NSMutableArray new];
+    [_service connect];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [_service disconnect];
+}
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    // Return the number of sections.
+    return 1;
 }
-*/
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section based on number of Programs.
+    return _messages.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleTableIdentifier" forIndexPath:indexPath];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"simpleTableIdentifier"];
+    }
+    [cell.textLabel setText:[_messages objectAtIndex:indexPath.row]];
+    
+    return cell;
+}
+
+- (IBAction)send:(UIButton *)sender {
+    NSString *messageOut = _textField.text;
+    [_service send:messageOut];
+    _textField.text = @"";
+    [_textField resignFirstResponder];
+}
+
+- (void)updateMessage:(NSString *)msg {
+    if (msg) {
+        [_messages addObject:msg];
+        [_tableView reloadData];
+    }
+}
 
 @end
