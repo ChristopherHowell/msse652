@@ -7,24 +7,26 @@
 //
 
 #import "SecondViewController.h"
-#import "SocketSvc.h"
 
-@interface SecondViewController () <UITableViewDelegate,UITableViewDataSource>
+#import "SRWebSocket.h"
+
+@interface SecondViewController () <SRWebSocketDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-@property (strong, nonatomic) SocketSvc *service;
 @property (strong, nonatomic) NSMutableArray *messages;
 @end
 
 @implementation SecondViewController
 
+SRWebSocket *_webSocket;
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _service = [SocketSvc new];
+    
     _messages = [NSMutableArray new];
-    [_service connect];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -32,9 +34,45 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)createConnection {
+    _webSocket = [[SRWebSocket alloc] initWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"ws://regisscis:8080/chat"]]];
+    _webSocket.delegate = self;
+    
+    self.title = @"Opening socket connection...";
+    [_webSocket open];
+}
+
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    [_service disconnect];
+    
+}
+
+- (void)webSocketDidOpen:(SRWebSocket *)webSocket {
+    NSLog(@"Websocket Connected");
+    self.title = @"Connected";
+}
+
+-(void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error {
+    NSLog(@"Websocket FAILED with error: %@", error);
+    self.title = @"Connection Failed";
+    _webSocket = nil;
+}
+
+- (void)webSocket:(SRWebSocket *) didReceiveMessage:(id)message {
+    NSLog(@"Received msg: %@", message);
+    
+    NSString *msg = (NSString *)message;
+    
+}
+
+- (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean {
+    NSLog(@"WebSocket closed");
+    self.title = @"Connection Closed";
+    _webSocket = nil;
+}
+
+-(void)sendMessage:(NSString *)message {
+    [_webSocket send:message];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -65,7 +103,7 @@
 
 - (IBAction)send:(UIButton *)sender {
     NSString *messageOut = _textField.text;
-    [_service send:messageOut];
+    
     _textField.text = @"";
     [_textField resignFirstResponder];
 }

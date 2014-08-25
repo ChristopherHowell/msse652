@@ -17,10 +17,13 @@
 		8319EF2E19879AE8001FE5E0 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8319EF2D19879AE8001FE5E0 /* libxml2.dylib */; };
 		8319EF34198A499B001FE5E0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8319EF32198A499B001FE5E0 /* Model.xcdatamodeld */; };
 		8319EF40198A4D38001FE5E0 /* Program.m in Sources */ = {isa = PBXBuildFile; fileRef = 8319EF3F198A4D38001FE5E0 /* Program.m */; };
+		833C62F619AB2E6400052CA6 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 833C62F519AB2E6400052CA6 /* SRWebSocket.m */; };
+		833C62F819AB30AB00052CA6 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 833C62F719AB30AB00052CA6 /* libicucore.dylib */; };
 		83427BAF198E4695001F7280 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83427BAE198E4695001F7280 /* Social.framework */; };
 		8348073F1969403000FCC405 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8348073E1969403000FCC405 /* ContactsViewController.m */; };
 		83480742196940C600FCC405 /* CoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83480741196940C600FCC405 /* CoursesTableViewController.m */; };
 		834807451969411300FCC405 /* ProgramsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834807441969411300FCC405 /* ProgramsTableViewController.m */; };
+		838B3BAA19AB3412000C921E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838B3BA919AB3412000C921E /* CoreFoundation.framework */; };
 		838BA6501969417D0086C837 /* TasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838BA64F1969417D0086C837 /* TasksViewController.m */; };
 		838F079019AAE6C400BB75DE /* SocketSvc.m in Sources */ = {isa = PBXBuildFile; fileRef = 838F078F19AAE6C400BB75DE /* SocketSvc.m */; };
 		83B04E411968BFBC00E0CA42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B04E401968BFBC00E0CA42 /* Foundation.framework */; };
@@ -99,6 +102,10 @@
 		8319EF33198A499B001FE5E0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		8319EF3E198A4D38001FE5E0 /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Program.h; sourceTree = "<group>"; };
 		8319EF3F198A4D38001FE5E0 /* Program.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Program.m; sourceTree = "<group>"; };
+		833C62F319AB2E6400052CA6 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		833C62F419AB2E6400052CA6 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		833C62F519AB2E6400052CA6 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		833C62F719AB30AB00052CA6 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		83427BAE198E4695001F7280 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		8348073D1969403000FCC405 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
 		8348073E1969403000FCC405 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
@@ -106,6 +113,7 @@
 		83480741196940C600FCC405 /* CoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesTableViewController.m; sourceTree = "<group>"; };
 		834807431969411300FCC405 /* ProgramsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramsTableViewController.h; sourceTree = "<group>"; };
 		834807441969411300FCC405 /* ProgramsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramsTableViewController.m; sourceTree = "<group>"; };
+		838B3BA919AB3412000C921E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		838BA64E1969417C0086C837 /* TasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TasksViewController.h; sourceTree = "<group>"; };
 		838BA64F1969417D0086C837 /* TasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksViewController.m; sourceTree = "<group>"; };
 		838F078E19AAE6C400BB75DE /* SocketSvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketSvc.h; sourceTree = "<group>"; };
@@ -142,12 +150,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838B3BAA19AB3412000C921E /* CoreFoundation.framework in Frameworks */,
+				8319EF2619879AB0001FE5E0 /* MobileCoreServices.framework in Frameworks */,
+				833C62F819AB30AB00052CA6 /* libicucore.dylib in Frameworks */,
 				83427BAF198E4695001F7280 /* Social.framework in Frameworks */,
 				8319EF2E19879AE8001FE5E0 /* libxml2.dylib in Frameworks */,
 				8319EF2C19879ADA001FE5E0 /* QuartzCore.framework in Frameworks */,
 				8319EF2A19879ACC001FE5E0 /* SystemConfiguration.framework in Frameworks */,
 				8319EF2819879ABF001FE5E0 /* Security.framework in Frameworks */,
-				8319EF2619879AB0001FE5E0 /* MobileCoreServices.framework in Frameworks */,
 				8319EF2419879AA1001FE5E0 /* CoreData.framework in Frameworks */,
 				8319EF2219879A95001FE5E0 /* CFNetwork.framework in Frameworks */,
 				8319EF2019879A78001FE5E0 /* libRestKit.a in Frameworks */,
@@ -179,6 +189,17 @@
 				8319EF1D198798AA001FE5E0 /* RestKitFrameworkTests.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		833C62F219AB2E6400052CA6 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				833C62F319AB2E6400052CA6 /* SocketRocket-Prefix.pch */,
+				833C62F419AB2E6400052CA6 /* SRWebSocket.h */,
+				833C62F519AB2E6400052CA6 /* SRWebSocket.m */,
+			);
+			name = SocketRocket;
+			path = "../../../../../../../../Downloads/SocketRocket-master/SocketRocket";
 			sourceTree = "<group>";
 		};
 		83677A1319732A9600D48BC8 /* Model */ = {
@@ -216,6 +237,8 @@
 		83B04E3F1968BFBC00E0CA42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				838B3BA919AB3412000C921E /* CoreFoundation.framework */,
+				833C62F719AB30AB00052CA6 /* libicucore.dylib */,
 				83427BAE198E4695001F7280 /* Social.framework */,
 				8319EF2D19879AE8001FE5E0 /* libxml2.dylib */,
 				8319EF2B19879ADA001FE5E0 /* QuartzCore.framework */,
@@ -256,6 +279,7 @@
 				83B04E551968BFBC00E0CA42 /* ViewController.h */,
 				83B04E561968BFBC00E0CA42 /* ViewController.m */,
 				83B04E581968BFBC00E0CA42 /* Images.xcassets */,
+				833C62F219AB2E6400052CA6 /* SocketRocket */,
 				83B04E471968BFBC00E0CA42 /* Supporting Files */,
 			);
 			path = msse652;
@@ -429,6 +453,7 @@
 				83480742196940C600FCC405 /* CoursesTableViewController.m in Sources */,
 				834807451969411300FCC405 /* ProgramsTableViewController.m in Sources */,
 				8348073F1969403000FCC405 /* ContactsViewController.m in Sources */,
+				833C62F619AB2E6400052CA6 /* SRWebSocket.m in Sources */,
 				83B04E571968BFBC00E0CA42 /* ViewController.m in Sources */,
 				83DC7F2619AA7A8500836543 /* AddTasksViewController.m in Sources */,
 				83B04E511968BFBC00E0CA42 /* AppDelegate.m in Sources */,
@@ -575,6 +600,7 @@
 					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
 				);
 				INFOPLIST_FILE = "msse652/msse652-Info.plist";
+				OTHER_LDFLAGS = "";
 				"OTHER_LDFLAGS[arch=*]" = (
 					"-ObjC",
 					"-all_load",
@@ -597,6 +623,7 @@
 					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
 				);
 				INFOPLIST_FILE = "msse652/msse652-Info.plist";
+				OTHER_LDFLAGS = "";
 				"OTHER_LDFLAGS[arch=*]" = (
 					"-ObjC",
 					"-all_load",
